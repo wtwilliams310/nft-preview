@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <!-- css -->
-  <link rel="stylesheet" type="text/css" href="nft-preview.css">
+  <link rel="stylesheet" type="text/css" href="./nft-preview.css">
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
@@ -25,27 +25,36 @@
 	<main>
 		<article class="card">
 			<picture class="cube-image">
-				<img src="images/image-equilibrium.jpg" alt="square-prism">
+				<a href="#" target="_blank"><img class="equilibrium" src="./images/image-equilibrium.jpg" alt="clear square glass prism balancing on one corner" tabindex="0"></a>
+				<div class="overlay">
+					<img class="icon-view" src="./images/icon-view.svg" alt="eye">
+				</div>
 			</picture>
 			<div class="product-information">
-				<a href="https://www.google.com/">Equilibrium #3429</a>
+				<h1><a class="title" href="https://www.google.com/">Equilibrium #3429</a></h1>
 				<p class="description">Our Equilibrium collection promotes balance and calm.</p>
 				<div class="price-time">
-					<p class="price">0.041 ETH</p>
-					<p class="days-left">3 days left</p>
+					<div class="icon-price">
+						<img class="ethereum" src="./images/icon-ethereum.svg">
+						<p class="price">0.041 ETH</p>
+					</div>
+					<div class="icon-days">
+						<img class="clock" src="./images/icon-clock.svg">
+						<p class="days-left">3 days left</p>
+					</div>
 				</div>
 				<div class="line"></div>
 				<div class="avatar-author">
-					<img src="images/image-avatar.png">
-					<p class="author">Creation of <a href="https://www.google.com/">Jules Wyvern</a></p>
+					<img src="images/image-avatar.png" class="avatar-pic">
+					<p class="author">Creation of <a class="author-name" href="https://www.google.com/">Jules Wyvern</a></p>
 				</div>
 
 			</div>
 		</article>
 	</main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" style="color: white;">Frontend Mentor</a>. 
+    Coded by <a href="#" target="_blank" style="color: white;">Titus Williams</a>.
+  </footer>
 </body>
 </html>

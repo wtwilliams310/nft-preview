@@ -38,8 +38,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
 
-	-c-soft-blue: hsl(215, 51%, 70%);
-	-c-cyan: hsl(178, 100%, 50%);
+	--c-soft-blue: hsl(215, 51%, 70%);
+	--c-cyan: hsl(178, 100%, 50%);
+	--c-cyan-transparent: rgba(0,255,247,0.742);
 
 	--c-main-bg: hsl(217, 54%, 11%);
 	--c-card-bg: hsl(216, 50%, 16%);
@@ -58,17 +59,144 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
 	font-family: var(--ff-Outfit);
 	font-size: var(--fs-paragraph);
+	background: var(--c-main-bg);
+	display: grid;
+	place-content: center;
+	margin: 0 1.25rem;
 }
 
 
+.card {
+	background: var(--c-card-bg);
+	padding: 1.5rem 1.5rem;
+	display: grid;
+	gap: 1.25rem;
+	border-radius: 10px;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: var(--fw-heavy);
+	letter-spacing: -.7px;
+
+}
+
+a {
+	color: var(--c-white);
+	text-decoration: none;
+}
+
+.description, .days-left, .author, .attribution {
+	color: var(--c-soft-blue);
+}
+
+.price {
+	color: var(--c-cyan);
+}
+
+.description {
+	letter-spacing: -.7px;
+}
+
+/*Card details----------------------------------------------------------*/
+
+.product-information {
+	display: grid;
+	gap: 1.0rem;
+}
+
+.cube-image {
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: var(--c-cyan-transparent);
+	outline-style: solid;
+	outline-color: var(--c-card-bg);
+}
+
+.price-time {
+	display: flex;
+	justify-content: space-between;
+}
 
 
+.icon-price, .icon-days {
+	display: inline-flex;
+	gap: 5px;
+	letter-spacing: -.7px;
+	font-size: 1rem;
+}
+
+.ethereum, .clock {
+	height: 20px;
+	margin: auto;
+}
+
+.line {
+	height: 0.5px;
+	background: var(--c-line-bg);
+}
+
+.avatar-author {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	letter-spacing: -.7px;
+}
+
+.avatar-pic {
+	max-width: 32px;
+	max-height: 32px;
+	border: 1px solid var(--c-white);
+	border-radius: 50%;
+}
+
+/*active-states----------------------------------------------------------*/
+
+.cube-image, .title, .author-name {
+	cursor: pointer;
+}
+
+.cube-image {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 
+.cube-image:hover .equilibrium {
+	opacity: 0.3;
+}
+
+.cube-image:hover .overlay {
+	opacity: 1;
+}
+
+.equilibrium:focus {
+	opacity: 0.3;
+}
 
 
+.title:is(:hover, :focus), .author-name:is(:hover, :focus) {
+	color: var(--c-cyan);
+}
+
+/*media querey----------------------------------------------------------*/
 
 
+@media (min-width: 375px) {
+
+	.card {
+		max-width: 341px;
+		max-height: 648px;
+	}
+
+}
 
 
 
