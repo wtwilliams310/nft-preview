@@ -122,10 +122,15 @@ a {
 	outline-color: var(--c-card-bg);
 }
 
+
+h1 {
+	padding-top: 5px;
+}
+
 .price-time {
 	display: flex;
 	justify-content: space-between;
-	padding: 5px 0;
+	padding: 0.3rem 0;
 }
 
 .price {
@@ -133,23 +138,23 @@ a {
 }
 
 footer {
-	padding-top: 10px;
+	padding-top: 0.6rem;
 }
 
 .icon-price, .icon-days {
 	display: inline-flex;
-	gap: 5px;
+	gap: 0.313rem;
 	letter-spacing: -.7px;
 	font-size: 1rem;
 }
 
 .ethereum, .clock {
-	height: 20px;
+	height: 1.3rem;
 	margin: auto;
 }
 
 .line {
-	height: 0.5px;
+	height: 0.03rem;
 	background: var(--c-line-bg);
 }
 
@@ -161,8 +166,8 @@ footer {
 }
 
 .avatar-pic {
-	max-width: 32px;
-	max-height: 32px;
+	max-width: 2rem;
+	max-height: 2rem;
 	border: 1px solid var(--c-white);
 	border-radius: 50%;
 }
