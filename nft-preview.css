@@ -65,6 +65,9 @@ body {
 	margin: 0 1.25rem;
 }
 
+main {
+/*	margin-bottom: 40px;*/
+}
 
 .card {
 	background: var(--c-card-bg);
@@ -72,6 +75,8 @@ body {
 	display: grid;
 	gap: 1.25rem;
 	border-radius: 10px;
+	margin-top: 20px;
+/*	margin-bottom: 10px;*/
 }
 
 .title {
@@ -98,6 +103,10 @@ a {
 	letter-spacing: -.7px;
 }
 
+/*footer {
+	margin-top: 10px;
+}*/
+
 /*Card details----------------------------------------------------------*/
 
 .product-information {
@@ -116,8 +125,16 @@ a {
 .price-time {
 	display: flex;
 	justify-content: space-between;
+	padding: 5px 0;
 }
 
+.price {
+	font-weight: var(--fw-heavy);
+}
+
+footer {
+	padding-top: 10px;
+}
 
 .icon-price, .icon-days {
 	display: inline-flex;
