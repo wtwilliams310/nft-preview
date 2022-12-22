@@ -40,7 +40,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 	--c-soft-blue: hsl(215, 51%, 70%);
 	--c-cyan: hsl(178, 100%, 50%);
-	--c-cyan-transparent: rgba(0,255,247,0.742);
+/*	--c-cyan-transparent: rgba(0,255,247,0.742);*/
+	--c-cyan-transparent: rgba(0,255,247,1.000);
 
 	--c-main-bg: hsl(217, 54%, 11%);
 	--c-card-bg: hsl(216, 50%, 16%);
@@ -192,7 +193,7 @@ footer {
 
 
 .cube-image:hover .equilibrium {
-	opacity: 0.3;
+	opacity: 0.55;
 }
 
 .cube-image:hover .overlay {
@@ -200,7 +201,7 @@ footer {
 }
 
 .equilibrium:focus {
-	opacity: 0.3;
+	opacity: 0.55;
 }
 
 
