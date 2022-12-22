@@ -155,7 +155,7 @@ footer {
 }
 
 .line {
-	height: 0.03rem;
+	height: 1px;
 	background: var(--c-line-bg);
 }
 
