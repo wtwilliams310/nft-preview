@@ -212,11 +212,11 @@ footer {
 /*media querey----------------------------------------------------------*/
 
 
-@media (min-width: 375px) {
+@media (min-width: 23.438em) {
 
 	.card {
-		max-width: 341px;
-		max-height: 648px;
+		max-width: 21.313rem;
+		max-height: 40.5rem;
 	}
 
 }
